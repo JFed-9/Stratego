@@ -1,0 +1,6 @@
+﻿  Stratego.cpp
+c:\users\jacks\documents\programs\stratego\stratego\stratego.cpp(78): warning C4101: 'num2': unreferenced local variable
+c:\users\jacks\documents\programs\stratego\stratego\stratego.cpp(79): warning C4101: 'ch': unreferenced local variable
+c:\users\jacks\documents\programs\stratego\stratego\stratego.cpp(77): warning C4101: 'num': unreferenced local variable
+c:\users\jacks\documents\programs\stratego\stratego\stratego.cpp(593): warning C4715: 'piece::tryMove': not all control paths return a value
+  Stratego.vcxproj -> C:\Users\jacks\Documents\Programs\Stratego\Debug\Stratego.exe

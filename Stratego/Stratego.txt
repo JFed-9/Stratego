@@ -1,0 +1,60 @@
+Stratego C++
+
+struct piece {
+  int value; //1 2 3 4 5 6 7 8 9  0     10     11
+  //                             spy   bomb   flag
+  bool revealed = false;
+  int attack(piece &other)
+  {
+    other.revealed = true;
+    if (other.value > 0 && other.value < 10)
+    {
+      return (value < other.value) ? 1:0; //Return 1 if win, 0 if lose
+    } else {
+      if (other.value == 0)
+	return 1; //win
+      if (other.value == 10)
+	return 0; //lose
+      if (other.value == 11)
+	return 2; //game
+    }
+    return 3; //error
+  }
+  bool canMove(int x, int y)
+  {
+    //Check to see if it can move there
+  }
+}
+
+
+
+Display:
+    0   1   2   3   4   5   6   7   8   9
+  -----------------------------------------
+0 | X | X | X | X | X | X | X | X | X | X |
+  |---------------------------------------|
+1 | X | X | X | X | X | X | X | X | X | X |
+  |---------------------------------------|
+2 | X | X | X | X | X | X | X | X | X | X |
+  |---------------------------------------|
+3 | X | X | X | X | X | X | X | X | X | X |
+  |---------------------------------------|
+4 | X | X | ~ | ~ | X | X | ~ | ~ | X | X |
+  |---------------------------------------|
+5 | X | X | ~ | ~ | X | X | ~ | ~ | X | X |
+  |---------------------------------------|
+6 | X | X | X | X | X | X | X | X | X | X |
+  |---------------------------------------|
+7 | X | X | X | X | X | X | X | X | X | X |
+  |---------------------------------------|
+8 | X | X | X | X | X | X | X | X | X | X |
+  |---------------------------------------|
+9 | X | X | X | X | X | X | X | X | X | X |
+  -----------------------------------------
+
+
+
+
+
+
+
